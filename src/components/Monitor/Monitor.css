@@ -1,0 +1,160 @@
+.MonitorSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid red; */
+}
+
+.MonitorBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Glitch', sans-serif;
+}
+
+.Rotate {
+    font-size: 7rem;
+    margin-top: 50px;
+    animation: ArrowMove 1s linear infinite;
+}
+
+.MonitorTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 32%;
+    height: 40%;
+    /* border: 1px solid red; */
+}
+
+.MonitorTitle h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.MonitorTitle h1 {
+    font-size: 6rem;
+    margin-bottom: 0px;
+}
+
+.MonitorSecondText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid yellow; */
+}
+
+.MonitorSecondText h3 {
+    font-size: 3rem;
+}
+
+@keyframes ArrowMove {
+    0% {
+        transform: translateY(-5px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(90deg);
+    }
+
+    100% {
+        transform: translateY(-5px) rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .MonitorTitle {
+        width: 40%;
+    }
+
+    .MonitorSecondText {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .MonitorTitle {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .MonitorSecondText {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .MonitorTitle {
+        width: 58%;
+    }
+
+    .MonitorSecondText {
+        width: 57%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .MonitorSecondText {
+        width: 62%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .MonitorSecondText {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MonitorTitle {
+        width: 78%;
+    }
+
+    .MonitorSecondText {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .MonitorTitle {
+        width: 90%;
+    }
+
+    .MonitorTitle h2 {
+        font-size: 1.7rem;
+    }
+
+    .MonitorTitle h1 {
+        font-size: 3.5rem;
+    }
+
+    .MonitorSecondText {
+        flex-direction: column;
+    }
+
+    .MonitorSecondText h3 {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .MonitorTitle {
+        width: 90%;
+    }
+
+    .MonitorTitle h2 {
+        font-size: 1.3rem;
+    }
+
+    .MonitorTitle h1 {
+        font-size: 3rem;
+    }
+}
